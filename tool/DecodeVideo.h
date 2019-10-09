@@ -15,16 +15,11 @@ public:
 private:
 public:
 private:
-    Bitmap m_bmp;
-    
-    
-    struct Bitmap
-    {
-        int m_width;
-        int m_height;
-        int depth;
-        int m_buf_len;
-        unsigned char *m_buf;
-    };
+    int m_width;
+    int m_height;
+    int depth;
+    int m_buf_len;
+    unsigned char *m_buf;
+
 
 }

@@ -14,6 +14,9 @@
 		33447D6A21761D1C00B77257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33447D6821761D1C00B77257 /* LaunchScreen.storyboard */; };
 		33447D6D21761D1C00B77257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33447D6C21761D1C00B77257 /* main.m */; };
 		33447D742176204500B77257 /* tool in Resources */ = {isa = PBXBuildFile; fileRef = 33447D732176204500B77257 /* tool */; };
+		339D4198217D6D9E00D8D485 /* LLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 339D4197217D6D9E00D8D485 /* LLPlayerView.m */; };
+		339D419B217DC00400D8D485 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339D419A217DC00400D8D485 /* CoreGraphics.framework */; };
+		339D419D217DC00D00D8D485 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339D419C217DC00D00D8D485 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,10 @@
 		33447D6B21761D1C00B77257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33447D6C21761D1C00B77257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33447D732176204500B77257 /* tool */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tool; sourceTree = SOURCE_ROOT; };
+		339D4196217D6D9E00D8D485 /* LLPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLPlayerView.h; sourceTree = "<group>"; };
+		339D4197217D6D9E00D8D485 /* LLPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLPlayerView.m; sourceTree = "<group>"; };
+		339D419A217DC00400D8D485 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		339D419C217DC00D00D8D485 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339D419D217DC00D00D8D485 /* OpenGLES.framework in Frameworks */,
+				339D419B217DC00400D8D485 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +55,7 @@
 			children = (
 				33447D5C21761D1A00B77257 /* Player */,
 				33447D5B21761D1A00B77257 /* Products */,
+				339D4199217DC00400D8D485 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,8 +80,19 @@
 				33447D6821761D1C00B77257 /* LaunchScreen.storyboard */,
 				33447D6B21761D1C00B77257 /* Info.plist */,
 				33447D6C21761D1C00B77257 /* main.m */,
+				339D4196217D6D9E00D8D485 /* LLPlayerView.h */,
+				339D4197217D6D9E00D8D485 /* LLPlayerView.m */,
 			);
 			path = Player;
+			sourceTree = "<group>";
+		};
+		339D4199217DC00400D8D485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				339D419C217DC00D00D8D485 /* OpenGLES.framework */,
+				339D419A217DC00400D8D485 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33447D6221761D1A00B77257 /* ViewController.m in Sources */,
+				339D4198217D6D9E00D8D485 /* LLPlayerView.m in Sources */,
 				33447D6D21761D1C00B77257 /* main.m in Sources */,
 				33447D5F21761D1A00B77257 /* AppDelegate.m in Sources */,
 			);
